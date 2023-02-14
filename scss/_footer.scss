@@ -1,0 +1,10 @@
+footer {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    height: 5rem;
+    background-color: $secondary-color;
+    @include flex-center;
+    color: $primary-background-color;
+    font-size: 1rem;
+}

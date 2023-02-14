@@ -1,0 +1,310 @@
+// Media Queries
+
+@media screen and (max-width: 1125px) {
+    .contact-me {
+        .contact-methods {
+            li {
+                i.fas {
+                    display: block;
+                }
+
+                span {
+                    margin-top: 1rem;
+                    ;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+    .nav {
+        position: fixed;
+        z-index: 10;
+
+        .burger {
+            margin-right: 1rem;
+            visibility: visible;
+            z-index: 5;
+            transition: all 0.4s ease;
+
+            &.close {
+                .line1 {
+                    transform: rotate(-45deg) translate(-5px, 6px);
+                    background-color: $primary-hover;
+                    transition: all 0.4s ease;
+                }
+
+                .line2 {
+                    opacity: 0;
+                    transition: all 0.4s ease;
+                }
+
+                .line3 {
+                    transform: rotate(45deg) translate(-4px, -5px);
+                    background-color: $primary-hover;
+                    transition: all 0.4s ease;
+                }
+            }
+        }
+
+        .nav-list {
+            position: absolute;
+            top: 5vh;
+            right: 0;
+            width: 60%;
+            height: 95vh;
+            background-color: rgba($secondary-color, 1);
+            flex-direction: column;
+            z-index: 2;
+            transform: translateX(100%);
+
+            .nav-item {
+                opacity: 0;
+            }
+
+            &.active {
+                transform: translateX(0%);
+                transition: all 0.4s ease;
+
+                @keyframes linksFadein {
+                    from {
+                        opacity: 0;
+                        transform: translateX(50px);
+                    }
+
+                    to {
+                        opacity: 1;
+                        transform: translateX(0px);
+                    }
+                }
+            }
+        }
+    }
+
+    .about-me {
+        height: auto;
+    }
+
+    .container {
+        .portfolio {
+            .projects {
+                flex-direction: column;
+
+                .project {
+                    max-width: auto;
+                    margin: 1rem auto;
+                }
+            }
+        }
+
+        .contact-me {
+            .contact-methods {
+                flex-direction: column;
+
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                }
+
+                .contact-form {
+                    margin-top: 0.8rem;
+                    ;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header {
+        .showcase {
+            height: 100%;
+            padding-top: 1rem;
+            background-attachment: scroll;
+
+            .showcase-text {
+                padding: 1rem;
+
+                h1 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 0.75rem;
+                }
+            }
+        }
+    }
+
+    .about-me {
+        height: auto;
+
+        .container {
+            .section-title {
+                font-size: 1.4rem;
+                margin: 0;
+            }
+
+            .section-showcase {
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .portfolio {
+        .section-title {
+            font-size: 1.5rem;
+        }
+
+        .projects {
+            .project {
+                margin: 1rem 0 0 0;
+
+                .project-overlay {
+                    display: none;
+                }
+            }
+
+            .project-description {
+                display: block;
+                text-align: center;
+
+                .buttons {
+                    button {
+                        min-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-me {
+        width: 100%;
+        text-align: center;
+
+        .section-title {
+            font-size: 1.5rem;
+        }
+
+        .contact-methods {
+            li {
+                @include flex-center;
+                flex-direction: column;
+
+                span {
+                    margin-top: 1rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    footer {
+        p {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        .showcase {
+            .showcase-text {
+                padding-top: 2rem;
+
+                h1 {
+                    font-size: 1.75rem;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    font-size: 0.25rem;
+                }
+            }
+        }
+    }
+
+    .about-me {
+        height: auto;
+        padding: 1rem;
+
+        .container {
+            padding: 1rem;
+
+            .aboutme-text {
+                padding: 1rem 0;
+            }
+        }
+    }
+
+    .portfolio {
+        padding: 1rem 0.2rem 0 0.2rem;
+        .projects {
+            padding-bottom: 0;
+        }
+    }
+
+    .contact-me {
+        height: auto;
+        padding: 1rem;
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .contact-info {
+            height: auto;
+            flex-direction: column;
+
+            ul {
+                flex-direction: column;
+
+                li {
+                    @include flex-center;
+                    flex-direction: column;
+
+                    span {
+                        margin-top: 1rem;
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+
+            .social {
+                flex-direction: column;
+                justify-content: space-around;
+
+                i.fa-linkedin {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+        .contact-form {
+            width: 100%;
+            margin: 0 auto;
+
+            .spam-filter {
+                max-width: 50%;
+                text-align: center;
+            }
+
+            button {
+                min-width: 100%;
+            }
+        }
+    }
+
+    footer {
+        p {
+            font-size: 1rem;
+        }
+    }
+}
