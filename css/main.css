@@ -236,11 +236,15 @@ header .showcase .showcase-text h3 {
   margin: 0.5rem;
 }
 
-.portfolio .projects .project .project-overlay .stack .icon-label i.fab {
+.portfolio .projects .project .project-overlay .stack .icon-label i.fab .fa-python{
   color: #d72323;
   font-size: 1.2rem;
 }
 
+.portfolio .projects .project .project-overlay .stack .icon-label i.fab {
+  color: #d72323;
+  font-size: 1.2rem;
+}
 .portfolio .projects .project .project-overlay p {
   color: #f5eded;
 }
