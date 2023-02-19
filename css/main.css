@@ -6,7 +6,7 @@
   height: 5vh;
   width: 100%;
   padding: 2rem 0;
-  background-color: #3e3636;
+  background-color: hwb(0 14% 84%);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -22,6 +22,56 @@
   cursor: pointer;
   visibility: hidden;
 }
+
+.profile-picture-container {
+  position: relative;
+  display: inline-block;
+  justify-content: right;
+
+}
+
+.profile-picture {
+  display: block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  justify-content: right;
+  transform: translateX(-765%);
+
+ 
+}
+#a{
+justify-content: right;
+
+}
+
+.profile-picture-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  justify-content: right;
+  transform: translateX(-765%);
+}
+
+.profile-picture-label {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-1350%);
+  background-color: #00FFFF;
+  color: #333;
+  padding: 2px 2px;
+  border-radius: 100px;
+  font: weight 200px;;
+  cursor: pointer;
+  justify-content: right;
+}
+
 
 .nav .burger div {
   background-color: #f5eded;
@@ -39,6 +89,23 @@
 .nav .nav-list .nav-item {
   margin: 0 2rem;
 }
+#about{
+  color:yellow;
+  cursor: pointer;
+
+}
+#home{
+  color: green;
+  cursor: pointer;
+  size: 100px;
+}
+#portfolio_1{
+  color: #d72323;
+
+}
+#contact{
+  color: #d72323;
+}
 
 .nav .nav-list .nav-item a {
   color: #f5eded;
@@ -46,7 +113,13 @@
 }
 
 .nav .nav-list .nav-item a:hover {
-  color: #d72323;
+  color:	hsl(67, 91%, 50%);
+  font-size: larger;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  /* color: black; */
+  animation-iteration-count: 10;
+  animation-timing-function: cubic-bezier(19);
 }
 
 header {
@@ -101,7 +174,7 @@ header .showcase .showcase-text h3 {
 }
 
 .about-me {
-  background-color: #d72323;
+  background-color: 	#003366;
   color: #f5eded;
   padding: 2rem;
   display: flex;
@@ -236,13 +309,13 @@ header .showcase .showcase-text h3 {
   margin: 0.5rem;
 }
 
-.portfolio .projects .project .project-overlay .stack .icon-label i.fab .fa-python{
-  color: #d72323;
+.portfolio .projects .project .project-overlay .stack .icon-label i.fab .fa{
+  color: #6b23d7;
   font-size: 1.2rem;
 }
 
 .portfolio .projects .project .project-overlay .stack .icon-label i.fab {
-  color: #d72323;
+  color: #7a6969;
   font-size: 1.2rem;
 }
 .portfolio .projects .project .project-overlay p {
@@ -257,7 +330,7 @@ header .showcase .showcase-text h3 {
   border: none;
   border-radius: 0.5rem;
   margin: 1rem 1rem 0 0;
-  background-color: #d72323;
+  background-color:	#003366;
   transition: all 0.5s ease-in-out;
 }
 
@@ -271,7 +344,7 @@ header .showcase .showcase-text h3 {
 }
 
 .portfolio .projects .project:hover .project-overlay button:hover {
-  background-color: #ab1c1c;
+  background-color: 	#003366;
   transform: scale(1.1);
 }
 
@@ -304,12 +377,12 @@ header .showcase .showcase-text h3 {
 }
 
 .project-description .stack .icon-label i.fab {
-  color: #d72323;
+  color:	#003366;
   font-size: 1.2rem;
 }
 
 .project-description .stack .icon-label h4 {
-  color: #f5eded;
+  color: 	#003366;
   font-weight: 300;
 }
 
@@ -330,7 +403,7 @@ header .showcase .showcase-text h3 {
 }
 
 .project-description .buttons button:hover {
-  background-color: #ab1c1c;
+  background-color: 	#003366
 }
 
 .contact-me {
@@ -340,14 +413,15 @@ header .showcase .showcase-text h3 {
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: #d72323;
-  color: #f5eded;
+  background-color: 	#003366;
+  color:	#3ef165;
 }
 
 .contact-me .section-title {
   font-size: 2rem;
   text-transform: capitalize;
   margin-bottom: 2rem;
+  color: #3ef165;
 }
 
 .contact-me .contact-methods {
@@ -451,7 +525,7 @@ header .showcase .showcase-text h3 {
   border-radius: 0.2rem;
   resize: vertical;
   margin: 1rem 0;
-  outline: 2px solid #d72323;
+  outline: 2px solid #003366;
 }
 
 .contact-me .contact-form .spam-filter {

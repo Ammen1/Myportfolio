@@ -22,6 +22,11 @@
 
     <!-- Navigation Bar -->
     <nav class="nav">
+        <div class="profile-picture-container" id="a">
+            <img src="img/farm.jpg" alt="Profile Picture" class="profile-picture">
+            <input type="file" id="profile-picture-input" class="profile-picture-input" accept="img/*" onchange="loadProfilePicture(event)">
+            <label for="profile-picture-input" class="profile-picture-label">Change Picture</label>
+        </div>
         <div class="burger">
             <div class="line1"></div>
             <div class="line2"></div>
@@ -29,16 +34,16 @@
         </div>
         <ul class="nav-list">
             <li class="nav-item">
-                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html" id="home" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-                <a href="#about-me" class="nav-link">About Me</a>
+                <a href="#about-me" id="about" class="nav-link">About Me</a>
             </li>
             <li class="nav-item">
-                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#portfolio" id="portfolio_1" class="nav-link">Portfolio</a>
             </li>
             <li class="nav-item">
-                <a href="#contact-me" class="nav-link">Contact</a>
+                <a href="#contact-me" id="contact" class="nav-link">Contact</a>
             </li>
         </ul>
     </nav>
@@ -67,7 +72,7 @@
                 <div class="aboutme-text">
                     <p>
                         I'm Tamirat Guda,Software Engineering Student At Jimma University . commercially focused website developer and Django Backend Developer, with a
-                        wealth of transferable skills and a passion for digital innovation,Spacial I like Coding with Django at Backend, I'm a Django Backend and Frontend  Developer. The technologies I currently work with are …
+                        wealth of transferable skills and a passion for digital innovation,Special I like Coding with Django at Backend, I'm a Django Backend and Frontend  Developer. The technologies I currently work with are …
                     </p>
                     <div class="skills-icons">
                         <div class="icon-label">
@@ -119,14 +124,13 @@
                 My Portfolio
             </h2>
             <div class="projects">
-                <!-- Insanity Gym -->
+                <!-- Fashion Design -->
                 <div class="project">
-                    <img src="img/gym.jpg" alt="">
+                    <img src="img/showcase.jpg" alt="">
                     <div class="project-overlay">
                         <div class="description">
                             <p>
-                                Insanity
-                                Gym
+                              Fashion Design
                             </p>
                         </div>
                         <div class="stack">
@@ -200,7 +204,7 @@
                 </div>
                 <!-- Hello Fresh clone-->
                 <div class="project">
-                    <img src="img/hellofresh.jpg" alt="hellofresh">
+                    <img src="img/farm.jpg" alt="hellofresh">
                     <div class="project-overlay">
                         <div class="description">
                             <p>
@@ -240,7 +244,7 @@
                 <div class="project-description">
                     <div class="description">
                         <p>
-                          Amen.com - Homepage clone
+                          Ammen1.com - Homepage clone
                         </p>
                     </div>
                     <div class="stack">
@@ -274,11 +278,11 @@
                 </div>
                 <!-- To do App -->
                 <div class="project">
-                    <img src="img/todo.jpg" alt="todo">
+                    <img src="img/pen.jpg" alt="todo">
                     <div class="project-overlay">
                         <div class="description">
                             <p>
-                                React To Do List
+                                Django To Do List
                             </p>
                         </div>
                         <div class="stack">
@@ -318,7 +322,7 @@
                 <div class="project-description">
                     <div class="description">
                         <p>
-                            React To Do App
+                            Django To Do App
                         </p>
                     </div>
                     <div class="stack">
@@ -352,9 +356,9 @@
                         </button>
                     </div>
                 </div>
-                <!-- Ark Macro Calculator -->
+                <!--  Java Chatapp -->
                 <div class="project">
-                    <img src="img/arkveg.jpg" alt="todo">
+                    <img src="img/night.jpg" alt="todo">
                     <div class="project-overlay">
                         <div class="description">
                             <p>
@@ -434,13 +438,13 @@
                         </button>
                     </div>
                 </div>
-                <!-- React Countries  -->
+                <!-- Django E_Learing  -->
                 <div class="project">
-                    <img src="img/React Countries.jpg" alt="todo">
+                    <img src="img/pen.jpg" alt="todo">
                     <div class="project-overlay">
                         <div class="description">
                             <p>
-                                React Countries - Powered by Rest Countries API
+                                Django E_Learing
                             </p>
                         </div>
                         <div class="stack">
@@ -479,7 +483,7 @@
                 <div class="project-description">
                     <div class="description">
                         <p>
-                            React Countries
+                            Django E_Learing
                         </p>
                     </div>
                     <div class="stack">
@@ -514,13 +518,13 @@
                         </button>
                     </div>
                 </div>
-                <!-- Night Scenz Photography -->
+                <!--Barcode -->
                 <div class="project">
                     <img src="img/night.jpg" alt="todo">
                     <div class="project-overlay">
                         <div class="description">
                             <p>
-                                Night Scenz Photography
+                                Barcode 
                             </p>
                         </div>
                         <div class="stack">
@@ -694,10 +698,10 @@
                         </li>
                     </ul>
                     <div class="social">
-                        <a href="https://www.linkedin.com/in/nuh-ali-80a2121b2/">
+                        <a href="https://www.linkedin.com/">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://www.linkedin.com/" target="_blank">
+                        <a href="https://github.com/Ammen1/" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
                     </div>

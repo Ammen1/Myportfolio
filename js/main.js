@@ -76,3 +76,17 @@ mailIcon.addEventListener('click', () => {
 phoneIcon.addEventListener('click', () => {
     phoneNumber.classList.toggle("active")
 })
+
+
+
+function loadProfilePicture(event) {
+    var input = event.target;
+    var reader = new FileReader();
+    reader.onload = function() {
+      var dataURL = reader.result;
+      var picture = input.parentNode.querySelector('.profile-picture');
+      picture.src = dataURL;
+    };
+    reader.readAsDataURL(input.files[0]);
+  }
+  
